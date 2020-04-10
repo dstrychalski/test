@@ -1,0 +1,734 @@
+{
+  "scan_started": {
+    "seconds": 1586261758,
+    "nanos": 995618300
+  },
+  "scan_duration": 5,
+  "digest": "03cfc0fceffa8c66808a3f08c8d9b9dad0235b12634e0348f855558a1a5cf813",
+  "os": "debian",
+  "version": "9",
+  "resources": [
+    {
+      "resource": {
+        "format": "pypi",
+        "path": "/usr/local/lib/python2.7/dist-packages/requests-2.11.1.dist-info/METADATA",
+        "name": "requests",
+        "version": "2.11.1",
+        "cpe": "pkg:/debian:9:requests:2.11.1",
+        "license": "Apache 2.0"
+      },
+      "scanned": true,
+      "vulnerabilities": [
+        {
+          "name": "CVE-2018-18074",
+          "description": "The Requests package through 2.19.1 before 2018-09-14 for Python sends an HTTP Authorization header to an http URI upon receiving a same-hostname https-to-http redirect, which makes it easier for remote attackers to discover credentials by sniffing the network.",
+          "nvd_score_version": "CVSS v2",
+          "nvd_severity": "low",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2018-18074",
+          "vendor_score": 5,
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "medium",
+          "vendor_url": "https://github.com/requests/requests/commit/c45d7c49ea75133e52ab22a8e9e13173938e36ff",
+          "publish_date": "2018-10-09",
+          "modification_date": "2018-10-23"
+        }
+      ]
+    },
+    {
+      "resource": {
+        "format": "deb",
+        "name": "apt",
+        "version": "1.4.9",
+        "arch": "amd64",
+        "cpe": "pkg:/debian:9:apt:1.4.9",
+        "name_hash": "583f72a833c7dfd63c03edba3776247a"
+      },
+      "scanned": true,
+      "vulnerabilities": [
+        {
+          "name": "CVE-2011-3374",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "Not exploitable in Debian, since no keyring URI is defined",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2011-3374",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity"
+        }
+      ]
+    },
+    {
+      "resource": {
+        "format": "deb",
+        "name": "coreutils",
+        "version": "8.26-3",
+        "arch": "amd64",
+        "cpe": "pkg:/debian:9:coreutils:8.26-3",
+        "license": "GPL-3",
+        "name_hash": "f54228fe7e2ccf1df47e1d377fd167b6"
+      },
+      "scanned": true,
+      "vulnerabilities": [
+        {
+          "name": "CVE-2017-18018",
+          "description": "In GNU Coreutils through 8.29, chown-core.c in chown and chgrp does not prevent replacement of a plain file with a symlink during use of the POSIX \"-R -L\" options, which allows local users to modify the ownership of arbitrary files by leveraging a race condition.",
+          "nvd_score": 1.9,
+          "nvd_score_version": "CVSS v2",
+          "nvd_vectors": "AV:L/AC:M/Au:N/C:N/I:P/A:N",
+          "nvd_severity": "low",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-18018",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "http://lists.gnu.org/archive/html/coreutils/2017-12/msg00045.html\nhttp://www.openwall.com/lists/oss-security/2018/01/04/3\nDocumentation patches proposed:\nhttps://lists.gnu.org/archive/html/coreutils/2017-12/msg00072.html\nhttps://lists.gnu.org/archive/html/coreutils/2017-12/msg00073.html\nNeutralised by kernel hardening",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2017-18018",
+          "publish_date": "2018-01-03",
+          "modification_date": "2018-01-19",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity",
+          "nvd_score_v3": 4.7,
+          "nvd_vectors_v3": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
+          "nvd_severity_v3": "medium"
+        }
+      ]
+    },
+    {
+      "resource": {
+        "format": "deb",
+        "name": "dirmngr",
+        "version": "2.1.18-8~deb9u4",
+        "arch": "amd64",
+        "cpe": "pkg:/debian:9:dirmngr:2.1.18-8~deb9u4",
+        "name_hash": "22994a10ed21822c6c4642a5d3f7abfc"
+      },
+      "scanned": true,
+      "vulnerabilities": [
+        {
+          "name": "CVE-2011-2207",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "Negligible impact",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2011-2207",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity"
+        }
+      ]
+    },
+    {
+      "resource": {
+        "format": "deb",
+        "name": "libgcrypt20",
+        "version": "1.7.6-2+deb9u3",
+        "arch": "amd64",
+        "cpe": "pkg:/debian:9:libgcrypt20:1.7.6-2+deb9u3",
+        "license": "GPL-2,public domain",
+        "name_hash": "11241b021b7b528b656107d4764608ff"
+      },
+      "scanned": true,
+      "vulnerabilities": [
+        {
+          "name": "CVE-2018-6829",
+          "description": "cipher/elgamal.c in Libgcrypt through 1.8.2, when used to encrypt messages directly, improperly encodes plaintexts, which allows attackers to obtain sensitive information by reading ciphertext data (i.e., it does not have semantic security in face of a ciphertext-only attack). The Decisional Diffie-Hellman (DDH) assumption does not hold for Libgcrypt's ElGamal implementation.",
+          "nvd_score": 5,
+          "nvd_score_version": "CVSS v2",
+          "nvd_vectors": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+          "nvd_severity": "medium",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2018-6829",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "https://github.com/weikengchen/attack-on-libgcrypt-elgamal\nhttps://github.com/weikengchen/attack-on-libgcrypt-elgamal/wiki\nhttps://lists.gnupg.org/pipermail/gcrypt-devel/2018-February/004394.html\nGnuPG uses ElGamal in hybrid mode only.\nThis is not a vulnerability in libgcrypt, but in an application using\nit in an insecure manner, see also\nhttps://lists.gnupg.org/pipermail/gcrypt-devel/2018-February/004401.html",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2018-6829",
+          "publish_date": "2018-02-07",
+          "modification_date": "2018-03-13",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity",
+          "nvd_score_v3": 7.5,
+          "nvd_vectors_v3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "nvd_severity_v3": "high"
+        }
+      ]
+    },
+    {
+      "resource": {
+        "format": "deb",
+        "name": "libtasn1-6",
+        "version": "4.10-1.1+deb9u1",
+        "arch": "amd64",
+        "cpe": "pkg:/debian:9:libtasn1-6:4.10-1.1+deb9u1",
+        "license": "GPL-3.,LGPL-2.1",
+        "name_hash": "4de8fc5baa550ae67c3ba836460d9c75"
+      },
+      "scanned": true,
+      "vulnerabilities": [
+        {
+          "name": "CVE-2018-1000654",
+          "description": "GNU Libtasn1-4.13 libtasn1-4.13 version libtasn1-4.13, libtasn1-4.12 contains a DoS, specifically CPU usage will reach 100% when running asn1Paser against the POC due to an issue in _asn1_expand_object_id(p_tree), after a long time, the program will be killed. This attack appears to be exploitable via parsing a crafted file.",
+          "nvd_score": 7.1,
+          "nvd_score_version": "CVSS v2",
+          "nvd_vectors": "AV:N/AC:M/Au:N/C:N/I:N/A:C",
+          "nvd_severity": "high",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2018-1000654",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "Minor issue\nhttps://gitlab.com/gnutls/libtasn1/issues/4",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2018-1000654",
+          "publish_date": "2018-08-20",
+          "modification_date": "2018-10-30",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity",
+          "nvd_score_v3": 5.5,
+          "nvd_vectors_v3": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "nvd_severity_v3": "medium"
+        }
+      ]
+    },
+    {
+      "resource": {
+        "format": "deb",
+        "name": "libxml2",
+        "version": "2.9.4+dfsg1-2.2+deb9u2",
+        "arch": "amd64",
+        "cpe": "pkg:/debian:9:libxml2:2.9.4+dfsg1-2.2+deb9u2",
+        "name_hash": "748037201e1fe8af38d2e5566490bc42"
+      },
+      "scanned": true,
+      "vulnerabilities": [
+        {
+          "name": "CVE-2018-14567",
+          "description": "libxml2 2.9.8, if --with-lzma is used, allows remote attackers to cause a denial of service (infinite loop) via a crafted XML file that triggers LZMA_MEMLIMIT_ERROR, as demonstrated by xmllint, a different vulnerability than CVE-2015-8035 and CVE-2018-9251.",
+          "nvd_score": 4.3,
+          "nvd_score_version": "CVSS v2",
+          "nvd_vectors": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+          "nvd_severity": "medium",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2018-14567",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "Minor issue\nhttps://gitlab.gnome.org/GNOME/libxml2/issues/13 (not public yet)\nhttps://gitlab.gnome.org/GNOME/libxml2/commit/2240fbf5912054af025fb6e01e26375100275e74",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2018-14567",
+          "publish_date": "2018-08-16",
+          "modification_date": "2018-10-12",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity",
+          "nvd_score_v3": 6.5,
+          "nvd_vectors_v3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "nvd_severity_v3": "medium"
+        },
+        {
+          "name": "CVE-2018-14404",
+          "description": "A NULL pointer dereference vulnerability exists in the xpath.c:xmlXPathCompOpEval() function of libxml2 through 2.9.8 when parsing an invalid XPath expression in the XPATH_OP_AND or XPATH_OP_OR case. Applications processing untrusted XSL format inputs with the use of the libxml2 library may be vulnerable to a denial of service attack due to a crash of the application.",
+          "nvd_score": 5,
+          "nvd_score_version": "CVSS v2",
+          "nvd_vectors": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+          "nvd_severity": "medium",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2018-14404",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "Minor issue\nhttps://gitlab.gnome.org/GNOME/libxml2/issues/5\nhttps://gitlab.gnome.org/GNOME/libxml2/issues/10\nhttps://gitlab.gnome.org/GNOME/libxml2/commit/a436374994c47b12d5de1b8b1d191a098fa23594",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2018-14404",
+          "publish_date": "2018-07-19",
+          "modification_date": "2018-09-28",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity",
+          "nvd_score_v3": 7.5,
+          "nvd_vectors_v3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "nvd_severity_v3": "high"
+        },
+        {
+          "name": "CVE-2017-18258",
+          "description": "The xz_head function in xzlib.c in libxml2 before 2.9.6 allows remote attackers to cause a denial of service (memory consumption) via a crafted LZMA file, because the decoder functionality does not restrict memory usage to what is required for a legitimate file.",
+          "nvd_score": 4.3,
+          "nvd_score_version": "CVSS v2",
+          "nvd_vectors": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+          "nvd_severity": "medium",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-18258",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "Minor issue; wait for upstream fix for upstream bug 794914\nhttps://bugzilla.gnome.org/show_bug.cgi?id=786696\nFixed by: https://git.gnome.org/browse/libxml2/commit/?id=e2a9122b8dde53d320750451e9907a7dcb2ca8bb\nWhen fixing this issue make sure to not open CVE-2018-9251 and apply\nthe fix for CVE-2018-9251 / https://bugzilla.gnome.org/show_bug.cgi?id=794914",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2017-18258",
+          "publish_date": "2018-04-08",
+          "modification_date": "2018-09-28",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity",
+          "nvd_score_v3": 6.5,
+          "nvd_vectors_v3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "nvd_severity_v3": "medium"
+        },
+        {
+          "name": "CVE-2017-8872",
+          "description": "The htmlParseTryOrFinish function in HTMLparser.c in libxml2 2.9.4 allows attackers to cause a denial of service (buffer over-read) or information disclosure.",
+          "nvd_score": 6.4,
+          "nvd_score_version": "CVSS v2",
+          "nvd_vectors": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
+          "nvd_severity": "medium",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-8872",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "Minor issue\nhttps://bugzilla.gnome.org/show_bug.cgi?id=775200",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2017-8872",
+          "publish_date": "2017-05-10",
+          "modification_date": "2017-05-15",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity",
+          "nvd_score_v3": 9.1,
+          "nvd_vectors_v3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "nvd_severity_v3": "critical"
+        },
+        {
+          "name": "CVE-2017-5969",
+          "description": "** DISPUTED ** libxml2 2.9.4, when used in recover mode, allows remote attackers to cause a denial of service (NULL pointer dereference) via a crafted XML document.  NOTE: The maintainer states \"I would disagree of a CVE with the Recover parsing option which should only be used for manual recovery at least for XML parser.\"",
+          "nvd_score": 2.6,
+          "nvd_score_version": "CVSS v2",
+          "nvd_vectors": "AV:N/AC:H/Au:N/C:N/I:N/A:P",
+          "nvd_severity": "low",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5969",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "Minor issue, only a denial-of-service when using recover mode\nhttp://www.openwall.com/lists/oss-security/2016/11/05/3\nUpstream bug: https://bugzilla.gnome.org/show_bug.cgi?id=778519\nDuplicate upstream bug (contains patch): https://bugzilla.gnome.org/show_bug.cgi?id=758422\nFixed by: https://git.gnome.org/browse/libxml2/commit/?id=94691dc884d1a8ada39f073408b4bb92fe7fe882",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2017-5969",
+          "publish_date": "2017-04-11",
+          "modification_date": "2017-11-10",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity",
+          "nvd_score_v3": 4.7,
+          "nvd_vectors_v3": "CVSS:3.0/AV:L/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "nvd_severity_v3": "medium"
+        },
+        {
+          "name": "CVE-2017-5130",
+          "description": "An integer overflow in xmlmemory.c in libxml2 before 2.9.5, as used in Google Chrome prior to 62.0.3202.62 and other products, allowed a remote attacker to potentially exploit heap corruption via a crafted XML file.",
+          "nvd_score": 6.8,
+          "nvd_score_version": "CVSS v2",
+          "nvd_vectors": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+          "nvd_severity": "medium",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-5130",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "Minor issue\nchromium-browser uses system libxml2.\nhttps://bugs.chromium.org/p/chromium/issues/detail?id=722079 (not public)\nhttps://bugzilla.gnome.org/show_bug.cgi?id=783026 (not public)\nxmlMemoryStrdup is only for debugging with excpetion in xmlint when invoked\nwith --maxmem. Similar issue for xmlMallocLoc and xmlReallocLoc.\nFixed by: https://git.gnome.org/browse/libxml2/commit/?id=897dffbae322b46b83f99a607d527058a72c51ed\nNeeds follow up: https://git.gnome.org/browse/libxml2/commit/?id=ed48d65b4d6c5cec7be035ad5eebeba873b4b955",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2017-5130",
+          "publish_date": "2018-02-07",
+          "modification_date": "2018-02-26",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity",
+          "nvd_score_v3": 8.8,
+          "nvd_vectors_v3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "nvd_severity_v3": "high"
+        }
+      ]
+    },
+    {
+      "resource": {
+        "format": "deb",
+        "name": "openssl",
+        "version": "1.1.0l-1~deb9u1",
+        "arch": "amd64",
+        "cpe": "pkg:/debian:9:openssl:1.1.0l-1~deb9u1",
+        "name_hash": "50955d4b2031271f8fda1764c1a66ac3"
+      },
+      "scanned": true,
+      "vulnerabilities": [
+        {
+          "name": "CVE-2018-5407",
+          "description": "Simultaneous Multi-threading (SMT) in processors can enable local users to exploit software vulnerable to timing attacks via a side-channel timing attack on 'port contention'.",
+          "nvd_score_version": "CVSS v2",
+          "nvd_severity": "low",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2018-5407",
+          "vendor_score_version": "CVSS v2",
+          "vendor_severity": "low",
+          "vendor_statement": "https://www.openssl.org/news/secadv/20181112.txt\nOpenSSL_1_0_2-stable: https://git.openssl.org/?p=openssl.git;a=commit;h=b18162a7c9bbfb57112459a4d6631fa258fd8c0c\nhttps://www.openwall.com/lists/oss-security/2018/11/01/4\nhttps://github.com/bbbrumley/portsmash\nThis is not an issue in software but in a hardware issue. Issue can be\nmitigated e.g. for OpenSSL.",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2018-5407",
+          "publish_date": "2018-11-15",
+          "modification_date": "2018-11-22",
+          "fix_version": "1.1.1~~pre9-1",
+          "solution": "Upgrade package openssl to version 1.1.1~~pre9-1 or above."
+        },
+        {
+          "name": "CVE-2018-0737",
+          "description": "The OpenSSL RSA Key generation algorithm has been shown to be vulnerable to a cache timing side channel attack. An attacker with sufficient access to mount cache timing attacks during the RSA key generation process could recover the private key. Fixed in OpenSSL 1.1.0i-dev (Affected 1.1.0-1.1.0h). Fixed in OpenSSL 1.0.2p-dev (Affected 1.0.2b-1.0.2o).",
+          "nvd_score": 4.3,
+          "nvd_score_version": "CVSS v2",
+          "nvd_vectors": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+          "nvd_severity": "medium",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2018-0737",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "Can wait for next DSA and upstream release\nhttps://www.openssl.org/news/secadv/20180416.txt\nOpenSSL_1_1_0-stable: https://git.openssl.org/?p=openssl.git;a=commit;h=6939eab03a6e23d2bd2c3f5e34fe1d48e542e787\nOpenSSL_1_0_2-stable: https://git.openssl.org/?p=openssl.git;a=commit;h=349a41da1ad88ad87825414752a8ff5fdd6a6c3f\nhttps://eprint.iacr.org/2018/367",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2018-0737",
+          "publish_date": "2018-04-16",
+          "modification_date": "2018-11-07",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity",
+          "nvd_score_v3": 5.9,
+          "nvd_vectors_v3": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "nvd_severity_v3": "medium"
+        },
+        {
+          "name": "CVE-2018-0735",
+          "description": "The OpenSSL ECDSA signature algorithm has been shown to be vulnerable to a timing side channel attack. An attacker could use variations in the signing algorithm to recover the private key. Fixed in OpenSSL 1.1.0j (Affected 1.1.0-1.1.0i). Fixed in OpenSSL 1.1.1a (Affected 1.1.1).",
+          "nvd_score_version": "CVSS v2",
+          "nvd_severity": "low",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2018-0735",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "Wait for next DSA and upstream release\nhttps://www.openssl.org/news/secadv/20181029.txt\nOpenSSL_1_1_1-stable: https://git.openssl.org/?p=openssl.git;a=commit;h=b1d6d55ece1c26fa2829e2b819b038d7b6d692b4\nOpenSSL_1_1_0-stable: https://git.openssl.org/?p=openssl.git;a=commit;h=56fb454d281a023b3f950d969693553d3f3ceea1",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2018-0735",
+          "publish_date": "2018-10-29",
+          "modification_date": "2018-11-22",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity"
+        },
+        {
+          "name": "CVE-2018-0734",
+          "description": "The OpenSSL DSA signature algorithm has been shown to be vulnerable to a timing side channel attack. An attacker could use variations in the signing algorithm to recover the private key. Fixed in OpenSSL 1.1.1a (Affected 1.1.1). Fixed in OpenSSL 1.1.0j (Affected 1.1.0-1.1.0i). Fixed in OpenSSL 1.0.2q (Affected 1.0.2-1.0.2p).",
+          "nvd_score_version": "CVSS v2",
+          "nvd_severity": "low",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2018-0734",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "Wait for next DSA and upstream release\nhttps://www.openssl.org/news/secadv/20181030.txt\nOpenSSL_1_1_1-stable: https://git.openssl.org/?p=openssl.git;a=commit;h=8abfe72e8c1de1b95f50aa0d9134803b4d00070f\nOpenSSL_1_1_0-stable: https://git.openssl.org/?p=openssl.git;a=commit;h=ef11e19d1365eea2b1851e6f540a0bf365d303e7\nOpenSSL_1_0_2-stable: https://git.openssl.org/?p=openssl.git;a=commit;h=43e6a58d4991a451daf4891ff05a48735df871ac\nActually the version in Jessie is not vulnerable. Nevertheless there is a bug fix which\nfuther reduces the amount of leaked timing information. It got no CVE on its own and\nintroduced this vulnerability. In order to not forget this issue and probably get more\ninformation about it later, it is marked as \u003cpostponed\u003e instead of \u003cnot-affected\u003e\nhttps://git.openssl.org/?p=openssl.git;a=commitdiff;h=b96bebacfe814deb99fb64a3ed2296d95c573600",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2018-0734",
+          "publish_date": "2018-10-30",
+          "modification_date": "2018-11-20",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity"
+        },
+        {
+          "name": "CVE-2018-0732",
+          "description": "During key agreement in a TLS handshake using a DH(E) based ciphersuite a malicious server can send a very large prime value to the client. This will cause the client to spend an unreasonably long period of time generating a key for this prime resulting in a hang until the client has finished. This could be exploited in a Denial Of Service attack. Fixed in OpenSSL 1.1.0i-dev (Affected 1.1.0-1.1.0h). Fixed in OpenSSL 1.0.2p-dev (Affected 1.0.2-1.0.2o).",
+          "nvd_score": 5,
+          "nvd_score_version": "CVSS v2",
+          "nvd_vectors": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+          "nvd_severity": "medium",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2018-0732",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "Minor issue, can be fixed along with next OpenSSL security release\nOpenSSL_1_1_0-stable: https://git.openssl.org/?p=openssl.git;a=commit;h=ea7abeeabf92b7aca160bdd0208636d4da69f4f4\nOpenSSL_1_0_2-stable: https://git.openssl.org/?p=openssl.git;a=commit;h=3984ef0b72831da8b3ece4745cac4f8575b19098\nhttps://www.openssl.org/news/secadv/20180612.txt",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2018-0732",
+          "publish_date": "2018-06-12",
+          "modification_date": "2018-11-09",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity",
+          "nvd_score_v3": 7.5,
+          "nvd_vectors_v3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "nvd_severity_v3": "high"
+        },
+        {
+          "name": "CVE-2007-6755",
+          "description": "The NIST SP 800-90A default statement of the Dual Elliptic Curve Deterministic Random Bit Generation (Dual_EC_DRBG) algorithm contains point Q constants with a possible relationship to certain \"skeleton key\" values, which might allow context-dependent attackers to defeat cryptographic protection mechanisms by leveraging knowledge of those values.  NOTE: this is a preliminary CVE for Dual_EC_DRBG; future research may provide additional details about point Q and associated attacks, and could potentially lead to a RECAST or REJECT of this CVE.",
+          "nvd_score": 5.8,
+          "nvd_score_version": "CVSS v2",
+          "nvd_vectors": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+          "nvd_severity": "medium",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2007-6755",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "Unused/broken in OpenSSL, see http://marc.info/?l=openssl-announce\u0026m=138747119822324\u0026w=2",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2007-6755",
+          "publish_date": "2013-10-11",
+          "modification_date": "2016-11-28",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity"
+        },
+        {
+          "name": "CVE-2010-0928",
+          "description": "OpenSSL 0.9.8i on the Gaisler Research LEON3 SoC on the Xilinx Virtex-II Pro FPGA uses a Fixed Width Exponentiation (FWE) algorithm for certain signature calculations, and does not verify the signature before providing it to a caller, which makes it easier for physically proximate attackers to determine the private key via a modified supply voltage for the microprocessor, related to a \"fault-based attack.\"",
+          "nvd_score": 4,
+          "nvd_score_version": "CVSS v2",
+          "nvd_vectors": "AV:L/AC:H/Au:N/C:C/I:N/A:N",
+          "nvd_severity": "medium",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-0928",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "http://www.eecs.umich.edu/~valeria/research/publications/DATE10RSA.pdf\nsomewhat impractical right now, but the openssl developers are working\non a fix just in case",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2010-0928",
+          "publish_date": "2010-03-05",
+          "modification_date": "2017-08-16",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity"
+        }
+      ]
+    },
+    {
+      "resource": {
+        "format": "deb",
+        "name": "patch",
+        "version": "2.7.5-1+deb9u2",
+        "arch": "amd64",
+        "cpe": "pkg:/debian:9:patch:2.7.5-1+deb9u2",
+        "name_hash": "e5c5e6dae38b284e8cf0bd1fb0efac03"
+      },
+      "scanned": true,
+      "vulnerabilities": [
+        {
+          "name": "CVE-2018-6952",
+          "description": "A double free exists in the another_hunk function in pch.c in GNU patch through 2.7.6.",
+          "nvd_score": 5,
+          "nvd_score_version": "CVSS v2",
+          "nvd_vectors": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+          "nvd_severity": "medium",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2018-6952",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "https://savannah.gnu.org/bugs/index.php?53133\nCrash in CLI tool, no security impact",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2018-6952",
+          "publish_date": "2018-02-13",
+          "modification_date": "2018-03-06",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity",
+          "nvd_score_v3": 7.5,
+          "nvd_vectors_v3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "nvd_severity_v3": "high"
+        },
+        {
+          "name": "CVE-2018-6951",
+          "description": "An issue was discovered in GNU patch through 2.7.6. There is a segmentation fault, associated with a NULL pointer dereference, leading to a denial of service in the intuit_diff_type function in pch.c, aka a \"mangled rename\" issue.",
+          "nvd_score": 5,
+          "nvd_score_version": "CVSS v2",
+          "nvd_vectors": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+          "nvd_severity": "medium",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2018-6951",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "https://git.savannah.gnu.org/cgit/patch.git/commit/?id=f290f48a621867084884bfff87f8093c15195e6a\nhttps://savannah.gnu.org/bugs/index.php?53132\nCrash in CLI tool, no security impact",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2018-6951",
+          "publish_date": "2018-02-13",
+          "modification_date": "2018-04-11",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity",
+          "nvd_score_v3": 7.5,
+          "nvd_vectors_v3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "nvd_severity_v3": "high"
+        },
+        {
+          "name": "CVE-2016-10713",
+          "description": "An issue was discovered in GNU patch before 2.7.6. Out-of-bounds access within pch_write_line() in pch.c can possibly lead to DoS via a crafted input file.",
+          "nvd_score": 4.3,
+          "nvd_score_version": "CVSS v2",
+          "nvd_vectors": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+          "nvd_severity": "medium",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-10713",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "https://git.savannah.gnu.org/cgit/patch.git/commit/src/pch.c?id=a0d7fe4589651c64bd16ddaaa634030bb0455866\nCrash in CLI tool, no security impact",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2016-10713",
+          "publish_date": "2018-02-13",
+          "modification_date": "2018-04-17",
+          "fix_version": "2.7.6-1",
+          "solution": "Upgrade package patch to version 2.7.6-1 or above.",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity",
+          "nvd_score_v3": 5.5,
+          "nvd_vectors_v3": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "nvd_severity_v3": "medium"
+        },
+        {
+          "name": "CVE-2010-4651",
+          "description": "Directory traversal vulnerability in util.c in GNU patch 2.6.1 and earlier allows user-assisted remote attackers to create or overwrite arbitrary files via a filename that is specified with a .. (dot dot) or full pathname, a related issue to CVE-2010-1679.",
+          "nvd_score": 5.8,
+          "nvd_score_version": "CVSS v2",
+          "nvd_vectors": "AV:N/AC:M/Au:N/C:N/I:P/A:P",
+          "nvd_severity": "medium",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-4651",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "Applying a patch blindly opens more severe security issues than only directory traversal...\nopenwall ships a fix\nSee https://bugzilla.redhat.com/show_bug.cgi?id=667529 for details",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2010-4651",
+          "publish_date": "2011-03-11",
+          "modification_date": "2016-11-28",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity"
+        }
+      ]
+    },
+    {
+      "resource": {
+        "format": "deb",
+        "name": "perl",
+        "version": "5.24.1-3+deb9u6",
+        "arch": "amd64",
+        "cpe": "pkg:/debian:9:perl:5.24.1-3+deb9u6",
+        "name_hash": "f83a0aa1f9ca0f7dd5994445ba7d9e80"
+      },
+      "scanned": true,
+      "vulnerabilities": [
+        {
+          "name": "CVE-2011-4116",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "http://thread.gmane.org/gmane.comp.security.oss.general/6174/focus=6177",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2011-4116",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity"
+        }
+      ]
+    },
+    {
+      "resource": {
+        "format": "deb",
+        "name": "python2.7",
+        "version": "2.7.13-2+deb9u3",
+        "arch": "amd64",
+        "cpe": "pkg:/debian:9:python2.7:2.7.13-2+deb9u3",
+        "name_hash": "05d1e687ccb807029f041da8dcfda8f5"
+      },
+      "scanned": true,
+      "vulnerabilities": [
+        {
+          "name": "CVE-2018-1000030",
+          "description": "Python 2.7.14 is vulnerable to a Heap-Buffer-Overflow as well as a Heap-Use-After-Free. Python versions prior to 2.7.14 may also be vulnerable and it appears that Python 2.7.17 and prior may also be vulnerable however this has not been confirmed. The vulnerability lies when multiply threads are handling large amounts of data. In both cases there is essentially a race condition that occurs. For the Heap-Buffer-Overflow, Thread 2 is creating the size for a buffer, but Thread1 is already writing to the buffer without knowing how much to write. So when a large amount of data is being processed, it is very easy to cause memory corruption using a Heap-Buffer-Overflow. As for the Use-After-Free, Thread3-\u003eMalloc-\u003eThread1-\u003eFree's-\u003eThread2-Re-uses-Free'd Memory. The PSRT has stated that this is not a security vulnerability due to the fact that the attacker must be able to run code, however in some situations, such as function as a service, this vulnerability can potentially be used by an attacker to violate a trust boundary, as such the DWF feels this issue deserves a CVE.",
+          "nvd_score": 6.8,
+          "nvd_score_version": "CVSS v2",
+          "nvd_vectors": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+          "nvd_severity": "medium",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2018-1000030",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "Original report: https://bugs.python.org/issue31530\nhttps://bugs.python.org/file47157/0001-stop-crashes-when-iterating-over-a-file-on-multiple-.patch\nwhich was followed by a pull request to fix the issue:\nhttps://github.com/python/cpython/pull/3670\nhttps://github.com/python/cpython/pull/3672\nhttps://github.com/python/cpython/commit/6401e5671781eb217ee1afb4603cc0d1b0367ae6\nThe original approach caused a regression leading to\nhttps://github.com/python/cpython/pull/5060\nhttps://bugs.python.org/msg309265\nwhere the 6401e56 commit was mostly reverted again.\nNeeded: https://github.com/python/cpython/commit/dbf52e02f18dac6f5f0a64f78932f3dc6efc056b\nNo practical security impact, why DWF assigned a CVE ID is hard to tell",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2018-1000030",
+          "publish_date": "2018-02-08",
+          "modification_date": "2018-11-16",
+          "fix_version": "2.7.14-5",
+          "solution": "Upgrade package python2.7 to version 2.7.14-5 or above.",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity",
+          "nvd_score_v3": 8.1,
+          "nvd_vectors_v3": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "nvd_severity_v3": "high"
+        },
+        {
+          "name": "CVE-2017-17522",
+          "description": "** DISPUTED ** Lib/webbrowser.py in Python through 3.6.3 does not validate strings before launching the program specified by the BROWSER environment variable, which might allow remote attackers to conduct argument-injection attacks via a crafted URL. NOTE: a software maintainer indicates that exploitation is impossible because the code relies on subprocess.Popen and the default shell=False setting.",
+          "nvd_score": 6.8,
+          "nvd_score_version": "CVSS v2",
+          "nvd_vectors": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+          "nvd_severity": "medium",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-17522",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "Lib/webbrowser.py does not validate strings before launching the program\nspecified by the BROWSER environment variable.\nhttps://bugs.python.org/issue32367\nHardly an issue with security impact, as the problematic code further relies\non subprocess.Popen with the default shell=False.",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2017-17522",
+          "publish_date": "2017-12-14",
+          "modification_date": "2017-12-28",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity",
+          "nvd_score_v3": 8.8,
+          "nvd_vectors_v3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "nvd_severity_v3": "high"
+        },
+        {
+          "name": "CVE-2013-7040",
+          "description": "Python 2.7 before 3.4 only uses the last eight bits of the prefix to randomize hash values, which causes it to compute hash values without restricting the ability to trigger hash collisions predictably and makes it easier for context-dependent attackers to cause a denial of service (CPU consumption) via crafted input to an application that maintains a hash table.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2012-1150.",
+          "nvd_score": 4.3,
+          "nvd_score_version": "CVSS v2",
+          "nvd_vectors": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+          "nvd_severity": "medium",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-7040",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "upstream tagged this as wontfix for versions older than 3.4",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2013-7040",
+          "publish_date": "2014-05-19",
+          "modification_date": "2016-11-28",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity"
+        }
+      ]
+    },
+    {
+      "resource": {
+        "format": "deb",
+        "name": "rsync",
+        "version": "3.1.2-1+deb9u2",
+        "arch": "amd64",
+        "cpe": "pkg:/debian:9:rsync:3.1.2-1+deb9u2",
+        "name_hash": "89a4551b0f29c1a652648b1cb8747021"
+      },
+      "scanned": true,
+      "vulnerabilities": [
+        {
+          "name": "CVE-2018-5764",
+          "description": "The parse_arguments function in options.c in rsyncd in rsync before 3.1.3 does not prevent multiple --protect-args uses, which allows remote attackers to bypass an argument-sanitization protection mechanism.",
+          "nvd_score": 5,
+          "nvd_score_version": "CVSS v2",
+          "nvd_vectors": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+          "nvd_severity": "medium",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2018-5764",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "Minor issue\nhttps://git.samba.org/rsync.git/?p=rsync.git;a=commit;h=7706303828fcde524222babb2833864a4bd09e07",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2018-5764",
+          "publish_date": "2018-01-17",
+          "modification_date": "2018-10-21",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity",
+          "nvd_score_v3": 7.5,
+          "nvd_vectors_v3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+          "nvd_severity_v3": "high"
+        }
+      ]
+    },
+    {
+      "resource": {
+        "format": "deb",
+        "name": "tar",
+        "version": "1.29b-1.1",
+        "arch": "amd64",
+        "cpe": "pkg:/debian:9:tar:1.29b-1.1",
+        "license": "GPL-2,GPL-3,public domain",
+        "name_hash": "db5570bf61464b46e2bde31ed61a7dc6"
+      },
+      "scanned": true,
+      "vulnerabilities": [
+        {
+          "name": "CVE-2005-2541",
+          "description": "Tar 1.15.1 does not properly warn the user when extracting setuid or setgid files, which may allow local users or remote attackers to gain privileges.",
+          "nvd_score": 10,
+          "nvd_score_version": "CVSS v2",
+          "nvd_vectors": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+          "nvd_severity": "high",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2005-2541",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "This is intended behaviour, after all tar is an archiving tool and you\nneed to give -p as a command line flag",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2005-2541",
+          "publish_date": "2005-08-10",
+          "modification_date": "2016-10-17",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity"
+        }
+      ]
+    },
+    {
+      "resource": {
+        "format": "deb",
+        "name": "util-linux",
+        "version": "2.29.2-1+deb9u1",
+        "arch": "amd64",
+        "cpe": "pkg:/debian:9:util-linux:2.29.2-1+deb9u1",
+        "license": "BSD-3-clause,GPL-2,LGPL-2.1+,LGPL-2.1,LGPL-3,LGPL-2+,LGPL-3+,public-domain,public domain,BSD-2-clause,BSD-4-clause,GPL-3+,GPL-2+,LGPL,MIT,GPL-3,LGPL-2",
+        "name_hash": "eb95ebf993909eaa0d8620ec88f2f32c"
+      },
+      "scanned": true,
+      "vulnerabilities": [
+        {
+          "name": "CVE-2016-2779",
+          "description": "runuser in util-linux allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer.",
+          "nvd_score": 7.2,
+          "nvd_score_version": "CVSS v2",
+          "nvd_vectors": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+          "nvd_severity": "high",
+          "nvd_url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2016-2779",
+          "vendor_score_version": "Aqua",
+          "vendor_severity": "negligible",
+          "vendor_statement": "Minor issue\nRestricting ioctl on the kernel side seems the better approach, patches have been posted to kernel-hardening list\nhttp://www.openwall.com/lists/oss-security/2016/02/27/1\nhttps://marc.info/?l=util-linux-ng\u0026m=145694736107128\u0026w=2\n2.31 introduces a new --pty option to separate privileged and unprivileged\nshells (not enabled by default and the cli switch is necessary).",
+          "vendor_url": "https://security-tracker.debian.org/tracker/CVE-2016-2779",
+          "publish_date": "2017-02-07",
+          "modification_date": "2017-03-02",
+          "classification": "The operating system vendor has classified the issue as a bug rather than a security issue, therefore the vulnerability has been classified as having negligible severity",
+          "nvd_score_v3": 7.8,
+          "nvd_vectors_v3": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "nvd_severity_v3": "high"
+        }
+      ]
+    }
+  ],
+  "image_assurance_results": {
+    "checks_performed": [
+      {
+        "policy_id": 1,
+        "policy_name": "Default",
+        "control": "max_severity",
+        "maximum_severity_allowed": "high",
+        "maximum_severity_found": "medium",
+        "maximum_fixable_severity_found": "low"
+      }
+    ]
+  },
+  "vulnerability_summary": {
+    "total": 2,
+    "high": 0,
+    "medium": 1,
+    "low": 1,
+    "negligible": 28,
+    "sensitive": 0,
+    "malware": 0,
+    "score_average": 2.5,
+    "max_score": 5,
+    "max_fixable_severity": "low"
+  },
+  "scan_options": {},
+  "initiating_user": "token",
+  "data_date": 1543020471,
+  "changed_result": false,
+  "function_metadata": {}
+}
