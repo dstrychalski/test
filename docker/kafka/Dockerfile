@@ -26,7 +26,7 @@ ARG ALLOW_UNSIGNED=false
 #Set an env var so that it's available in derived images
 ENV ALLOW_UNSIGNED=$ALLOW_UNSIGNED
 
-MAINTAINER damien.strychalski@lloydsbanking.com harry.hazelhurst@lloydsbanking.com 
+MAINTAINER damian
 LABEL io.confluent.docker=true
 
 # Python
